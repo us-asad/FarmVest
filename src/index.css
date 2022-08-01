@@ -1,0 +1,25 @@
+@import url('https://fonts.googleapis.com/css2?family=League+Spartan:wght@300;400;500;600;700&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.font-spartan {
+  font-family: 'League Spartan', sans-serif;
+}
+
+
+details summary::marker {
+  content: "";
+}
+
+@keyframes sweep {
+  0%    {opacity: 0; transform: translateX(-10px)}
+  100%  {opacity: 1; transform: translateX(0)}
+}
+
+details[open] summary ~ div {
+  animation: sweep .5s ease-in-out;
+}
+
+
